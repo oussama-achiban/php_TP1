@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            *{
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            body{
+                display : flex;
+                justify-content: center;
+                align-items: center;
+                background: url("bgound.png") no-repeat;
+                color: black;
+
+            }
+            form{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                min-width: 400px;
+                margin: 0 auto;
+                margin-top: 100px;
+                padding: 20px;
+                border-radius: 14px;
+                
+
+            }
+            input{
+                margin-bottom: 10px;
+                padding: 10px;
+                border: 1px solid #000000;
+                border-radius: 5px;
+                width: 300px;
+                height: 50px;
+            }
+            input[type="botton"]{
+                background: #000000;
+                text-align: center;
+                color: white;
+                font-size: 20px;
+                cursor: pointer;
+                
+            }
+            .principale{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                min-width: 460px;
+                margin: 0 auto;
+                margin-top: 50px;
+                border: solid black 3px;
+                border-radius: 14px;
+                background: white;
+                box-shadow: 0px 0px 10px #321c1c,
+                            0px 0px 20px #3b2020;
+            }
+            
+            input[type="botton"]:hover{
+                background:rgb(112, 57, 9);
+                box-shadow: 0px 0px 10px #ff0000,
+                            0px 0px 20px #ff0000;
+            }
+            .fotre{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                width: 455px;
+                margin: 0 auto;
+                padding: 20px;
+                margin-top: 100px;
+                border-top: solid black 3px;
+            }
+            .heder{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                width: 455px;
+                margin: 0 auto;
+                padding: 20px;
+                border-bottom: solid black 3px; 
+            }
+            img{
+                width: 70px;
+                height: 70px;
+            }
+            a{
+                text-decoration: none;
+            }
+            .profil{
+                width: 40px;
+                height: 45px;
+                border-radius: 50%;
+            }
+            .profil_img{
+                position: relative;
+                width: 45px;
+                height: 45px;
+                background: rgb(25, 0, 250);
+                border:solid 1px  ;
+                border-radius: 50%;
+            }
+            .profil_img::before{
+                position: absolute;
+                content: "";
+                width: 10px;
+                height: 10px;
+                background: rgb(0, 255, 51);
+                right: 0px;
+                top: 0px;
+                border-radius:50% ;
+            }
+            .nom_profil{
+                margin-top: 15px;
+
+            }
+            .txt{
+                display: flex;
+                position: relative;
+            }
+        </style>
+    </head>¨
+    <body>
+        <div class="principale">
+            <div class="heder">
+                <div class="txt">
+                    <div class="profil_img"><img src="profil.png" alt="profil" class="profil"></div>
+                    <h3 class="nom_profil">achiban oussama</h3>
+                </div>
+                <div class="logo"><img src="logo.jpg" alt="logo"></div>
+            </div>
+            <div class="dady">
+                <form action="index.html" method="post">
+                    <input type = "text " name="username"  placeholder="Identifiant">
+                    <br>
+                    <input type = "password" name="password"  placeholder="Mot de Passe">
+                    <br>
+                    <a href="note.html"><input type="botton" value="Valid" ></href></a>
+                </form>
+            </div>
+            <div class="fotre">
+                <p>&copy; copyright@2025 by <span>FSSM</span> | all rigts reserved</p>
+            </div>
+        </div>
+    </body>
+</html>
